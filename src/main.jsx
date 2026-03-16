@@ -23,6 +23,7 @@ const router = createBrowserRouter(
       <Route path="user/" element={<User />}>
         <Route path=":userid" element={<User />} />
       </Route>
+      <Route path="*" element={<div>Not Found</div>} />
     </Route>,
   ),
 );
